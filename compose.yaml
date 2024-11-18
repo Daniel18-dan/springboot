@@ -1,0 +1,15 @@
+services:
+ springboot:
+   build: .
+   ports:
+     - 9090:9090
+   volumes:
+     - dan_vol:/app
+   networks:
+     - dan_net
+
+volumes:
+  dan_vol:
+networks:
+  dan_net:
+
